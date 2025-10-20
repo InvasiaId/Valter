@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="/assets/logo.png" alt="Logo" class="logo" loading="lazy" />
+    <span class="bar">&#9776;</span>
+    <ul class="nav-desktop">
+      <li><a href="">Beranda</a></li>
+      <li><a href="">Tentang Kami</a></li>
+      <li><a href="">Kegiatan</a></li>
+      <li><a href="">Timeline</a></li>
+    </ul>
+    <button class="cta-btn">Kontak</button>
+  </header>
+
+  <!-- Navbar mobile -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="">Beranda</a></li>
+      <li><a href="">Tentang Kami</a></li>
+      <li><a href="">Kegiatan</a></li>
+      <li><a href="">Timeline</a></li>
+    </ul>
+    <button class="cta-btn-bar">Kontak</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section">
+      <p class="hero-title">Print <b>("Valter2025")</b></p>
+      <p class="hero-desc">
+        VALTER 2025 hadir dengan tema Creative Synergy, menghadirkan pelatihan, kompetisi digital,
+        dan seminar inspiratif. Wujudkan ide kreatifmu, kolaborasikan dengan teknologi, ciptakan inovasi baru!
+      </p>
+
+      <div class="hero-skill">
+        <div class="left-skill">
+          <div class="skill">
+            <img src="/assets/LogoWebDesign.png" alt="Web Design" loading="lazy" />
+            <div class="text">
+              <b>Web Design</b>
+              <p>View more</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <img src="/assets/logoPelatihan.png" alt="Pelatihan" loading="lazy" />
+            <div class="text">
+              <b>Pelatihan</b>
+              <p>View more</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-skill">
+          <div class="skill">
+            <img src="/assets/LogoEsport.png" alt="E-Sport" loading="lazy" />
+            <div class="text">
+              <b>E-Sport</b>
+              <p>View more</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <img src="/assets/LogoVideoCampaign.png" alt="Video Campaign" loading="lazy" />
+            <div class="text">
+              <b>Video Campaign</b>
+              <p>View more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="circle" id="circlePath">
+        <svg>
+          <defs>
+            <path id="circleText" d="M450,460 m-400,0 a400,400 0 1,1 800,0 a400,400 0 1,1 -800,0" />
+          </defs>
+
+          <text text-anchor="middle">
+            <textPath id="countdownText" href="#circleText" startOffset="25%">
+              01:00:00
+            </textPath>
+          </text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="about-card">
+        <h2>Apa itu <d>Valter?</d></h2>
+        <p>
+          VALTER Festival Multimedia & Komputer merupakan salah satu event tahunan HMJ TEKNIK KOMPUTER POLITEKNIK NEGERI SRIWIJAYA. Tahun ini, VALTER hadir lebih dekat dengan dunia content creator dengan mengusung tema Creative Synergy: “Kreativitas Berdaya bersama Teknologi”. Disini rangkaian acara seru siap menemani kamu! Mulai dari pelatihan, 3 kompetisi digital, hingga seminar inspiratif sebagai acara puncak! Saatnya wujudkan ide kreatifmu, kolaborasikan dengan teknologi, dan jadilah bagian dari energi baru di dunia digital! VALTER 2025 - Imajinasi Ciptakan Inovasi!
+        </p>
+      </div>
+
+      <div class="about-card theme-card">
+        <h2>Tema <d>Valter 2025</d></h2>
+        <p>Creative synergy: "Kreativitas Berdaya bersama Teknologi"</p>
+      </div>
+    </section>
+
+    <!-- Seminar Section -->
+    <section class="seminar-section">
+      <div class="seminar-container">
+        <div class="seminar-content">
+          <h2>Co-Create or Compete</h2>
+          <p>
+            Seminar VALTER 2025 hadir sebagai acara puncak dari Festival Multimedia dan Komputer (VALTER)! Dengan mengusung tema "CoCreate or Compete: Kolaborasi atau Kompetisi bersama AI", seminar ini menjadi momen spesial yang menghadirkan Kevin Anggara, content creator dan penulis muda sebagai GUEST STAR inspiratif untuk berbagi pengalaman dan insight terbaru. Seminar ini menggali bagaimana kreativitas, teknologi, dan AI dapat berjalan berdampingan, sekaligus menjadi tantangan di era digital dan content creation.
+          </p>
+          <a href="#" class="seminar-btn">Lihat Selengkapnya</a>
+        </div>
+
+        <div class="seminar-image-wrapper">
+          <img src="/assets/kevin.png" alt="Kevin Anggara" loading="lazy" />
+          <div class="image-tag name-tag">Kevin Anggara</div>
+          <div class="image-tag role-tag">Content Creator</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trailer Section -->
+    <section class="trailer-section">
+      <div class="video-card" id="play-trailer">
+        <div class="play-button">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <polygon points="40,30 70,50 40,70" fill="white" />
+          </svg>
+        </div>
+        <h3>Watch Our Trailer</h3>
+      </div>
+    </section>
+
+    <div class="video-modal-overlay" id="video-modal">
+      <div class="video-modal-content">
+        <span class="close-button" id="close-modal">&times;</span>
+        <div class="video-container">
+          <iframe
+            id="youtube-video"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activities Section -->
+    <section class="activities-section">
+      <h2>Kegiatan <d>Valter?</d></h2>
+      <div class="activities-container">
+        <div class="activity-card">
+          <div class="ikon-activity">
+            <img src="/assets/LogoWebDesign.png" alt="Web Design" loading="lazy" />
+          </div>
+          <h3>Web Design</h3>
+          <p>"Mendesain Landing Page Valter"</p>
+        </div>
+
+        <div class="activity-card">
+          <div class="ikon-activity">
+            <img src="/assets/LogoEsport.png" alt="E-sport" loading="lazy" />
+          </div>
+          <h3>E-sport</h3>
+          <p>"Mobile Legends Bang Bang"</p>
+        </div>
+
+        <div class="activity-card">
+          <div class="ikon-activity">
+            <img src="/assets/LogoPelatihan.png" alt="Pelatihan" loading="lazy" />
+          </div>
+          <h3>Pelatihan</h3>
+          <p>"Optimalisasi Produksi dan Penyajian Konten Digital Berkelanjutan"</p>
+        </div>
+
+        <div class="activity-card">
+          <div class="ikon-activity">
+            <img src="/assets/LogoVideoCampaign.png" alt="Video Campaign" loading="lazy" />
+          </div>
+          <h3>Video Campaign</h3>
+          <p>"Peran AI dalam pemanfaatan media sosial oleh para content creator"</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+      <h2>Timeline</h2>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Senin, 13 Oktober 2025</span>
+            <h3>Pembukaan</h3>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">20–22 Oktober 2025</span>
+            <h3>Pelaksanaan Pelatihan Content Creator</h3>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">25 Oktober 2025</span>
+            <h3>Pelaksanaan Esport & Web Design</h3>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">27 Oktober 2025</span>
+            <h3>Presentasi Lomba Video Campaign</h3>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">30 Oktober 2025</span>
+            <h3>Penutupan</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sponsorship Section -->
+    <section class="sponsorship-section">
+      <div class="sponsorship-container">
+        <h2>Open <span>Sponsorship!</span></h2>
+        <p>
+          Tertarik menjadi sponsor? Kami membuka peluang kerja sama untuk mendukung kegiatan kami.
+        </p>
+        <div class="contact-buttons">
+          <a href="" target="_blank" class="sponsor-btn">Khaidir</a>
+          <a href="" target="_blank" class="sponsor-btn">Fathir</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-info">
+          <img src="/assets/logo.png" alt="Valter 2025 Logo" class="footer-logo" loading="lazy" />
+          <div class="contact-item">
+            <span>Alamat</span>
+            <p>: Kesekretariatan HMJ Teknik Komputer, Politeknik Negeri Sriwijaya</p>
+          </div>
+          <div class="contact-item">
+            <span>No. telp</span>
+            <p>: +62 853-5361-2531</p>
+          </div>
+          <div class="contact-item">
+            <span>Instagram</span>
+            <p>: @valterpolsri</p>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="link-column">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Tentang kami</a></li>
+              <li><a href="#">Kegiatan</a></li>
+              <li><a href="#">Timeline</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <h3>Jelajahi lagi</h3>
+            <ul>
+              <li><a href="#">Seminar</a></li>
+              <li><a href="#">Pelatihan</a></li>
+              <li><a href="#">E-sport</a></li>
+              <li><a href="#">Web design</a></li>
+              <li><a href="#">Video campaign</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <p>Creative Synergy: "Kreativitas Berdaya bersama Teknologi"</p>
+        <p>&copy; Valter 2025. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

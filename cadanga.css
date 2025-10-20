@@ -1,0 +1,39 @@
+/* circle */
+/* buat agar circle ini meluap  */
+.circle{
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  box-shadow: 0px -2px 150px var(--primary-color),
+              inset 0 0 40px var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Agar elemen tetap pada alur normal */
+  animation: spin 10s linear infinite;
+  transform: rotateY(0deg); /* Agar elemen ini berputar searah */
+  transition: transform 10s ease-in-out;
+}
+.circle:hover{
+  transform: rotateY(360deg); /* Agar elemen ini berputar searah */
+}
+
+.circle svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .circle { width: 700px; height: 700px; top: 4%;}
+  .circle path {
+    d: path("M300,20 a330,330 0 1,1 0,660 a330,330 0 1,1 0,-660");
+  }
+
+}
+
+/* 764px */
+  /* .circle path {
+    d: path("M270,70 a180,180 0 1,1 0,360 a180,180 0 1,1 0,-360");
+  } */
